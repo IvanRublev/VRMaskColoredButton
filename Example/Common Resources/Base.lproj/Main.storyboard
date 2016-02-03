@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FaL-76-6ee">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--The controller-->
+        <scene sceneID="b6k-Qi-ud5">
+            <objects>
+                <viewController storyboardIdentifier="star" id="FaL-76-6ee" customClass="ViewController" customModule="VRMaskColoredButton_ExampleObjC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YD7-f4-bz3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cpe-In-LRf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1on-hb-PHh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7o-DY-hcl" customClass="VRMaskColoredButton" customModule="VRMaskColoredButton">
+                                <rect key="frame" x="30" y="278" width="44" height="44"/>
+                                <state key="normal" image="backward" backgroundImage="bg small circle"/>
+                                <connections>
+                                    <action selector="controlButtonPressed:" destination="FaL-76-6ee" eventType="touchUpInside" id="DdH-pV-Rth"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgp-PX-JoD" userLabel="Play button" customClass="VRMaskColoredButton" customModule="VRMaskColoredButton">
+                                <rect key="frame" x="265" y="265" width="70" height="70"/>
+                                <state key="normal" image="play" backgroundImage="bg large circle"/>
+                                <state key="selected" image="pause"/>
+                                <connections>
+                                    <action selector="controlButtonPressed:" destination="FaL-76-6ee" eventType="touchUpInside" id="nha-JE-Rrw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Controls color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RI1-Wt-6jm">
+                                <rect key="frame" x="167" y="521" width="80" height="15"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nx2-Uj-O6i" userLabel="Segmented View" customClass="SegmentedView" customModule="VRMaskColoredButton_ExampleObjC" customModuleProvider="target">
+                                <rect key="frame" x="164" y="551" width="272" height="29"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCo-3b-w6x" userLabel="Left button" customClass="VRMaskColoredButton" customModule="VRMaskColoredButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="WxI-eF-vYZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <state key="normal" title="Color1"/>
+                                        <connections>
+                                            <action selector="segButtonPressed:" destination="FaL-76-6ee" eventType="touchUpInside" id="XPj-dp-Iet"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j2a-jP-QU6" userLabel="Separator View">
+                                        <rect key="frame" x="90" y="0.0" width="1" height="29"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1" id="vzl-fC-xJo"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOt-Vd-ETy" userLabel="Middle button" customClass="VRMaskColoredButton" customModule="VRMaskColoredButton">
+                                        <rect key="frame" x="91" y="0.0" width="90" height="29"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <state key="normal" title="Color2"/>
+                                        <connections>
+                                            <action selector="segButtonPressed:" destination="FaL-76-6ee" eventType="touchUpInside" id="cDp-ta-8B1"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gfv-XC-DVt" userLabel="Separator View">
+                                        <rect key="frame" x="181" y="0.0" width="1" height="29"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1" id="ZJe-vg-54g"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4X-qD-OBK" userLabel="Right button" customClass="VRMaskColoredButton" customModule="VRMaskColoredButton">
+                                        <rect key="frame" x="182" y="0.0" width="90" height="29"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <state key="normal" title="Color3"/>
+                                        <connections>
+                                            <action selector="segButtonPressed:" destination="FaL-76-6ee" eventType="touchUpInside" id="8Ow-eD-dAq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="j2a-jP-QU6" firstAttribute="leading" secondItem="vCo-3b-w6x" secondAttribute="trailing" id="11D-q7-FUM"/>
+                                    <constraint firstItem="k4X-qD-OBK" firstAttribute="top" secondItem="nx2-Uj-O6i" secondAttribute="top" id="1fQ-J5-Ofc"/>
+                                    <constraint firstItem="pOt-Vd-ETy" firstAttribute="top" secondItem="nx2-Uj-O6i" secondAttribute="top" id="Bkw-8t-Op8"/>
+                                    <constraint firstAttribute="bottom" secondItem="pOt-Vd-ETy" secondAttribute="bottom" id="EEr-W5-Spa"/>
+                                    <constraint firstItem="vCo-3b-w6x" firstAttribute="leading" secondItem="nx2-Uj-O6i" secondAttribute="leading" id="EVa-fU-uCw"/>
+                                    <constraint firstAttribute="bottom" secondItem="Gfv-XC-DVt" secondAttribute="bottom" id="GnR-DT-Gs8"/>
+                                    <constraint firstItem="pOt-Vd-ETy" firstAttribute="width" secondItem="vCo-3b-w6x" secondAttribute="width" id="HFi-ov-CiP"/>
+                                    <constraint firstAttribute="bottom" secondItem="k4X-qD-OBK" secondAttribute="bottom" id="Ite-yb-e2C"/>
+                                    <constraint firstItem="Gfv-XC-DVt" firstAttribute="leading" secondItem="pOt-Vd-ETy" secondAttribute="trailing" id="KBS-bP-Ijw"/>
+                                    <constraint firstItem="pOt-Vd-ETy" firstAttribute="leading" secondItem="j2a-jP-QU6" secondAttribute="trailing" id="M9h-h1-dwP"/>
+                                    <constraint firstItem="j2a-jP-QU6" firstAttribute="top" secondItem="nx2-Uj-O6i" secondAttribute="top" id="Tcl-ec-LgY"/>
+                                    <constraint firstItem="k4X-qD-OBK" firstAttribute="width" secondItem="vCo-3b-w6x" secondAttribute="width" id="V3v-yW-nba"/>
+                                    <constraint firstAttribute="bottom" secondItem="j2a-jP-QU6" secondAttribute="bottom" id="dPC-Eo-NpU"/>
+                                    <constraint firstItem="Gfv-XC-DVt" firstAttribute="top" secondItem="nx2-Uj-O6i" secondAttribute="top" id="hFQ-Rg-d64"/>
+                                    <constraint firstAttribute="bottom" secondItem="vCo-3b-w6x" secondAttribute="bottom" id="hd6-zU-qKp"/>
+                                    <constraint firstItem="vCo-3b-w6x" firstAttribute="top" secondItem="nx2-Uj-O6i" secondAttribute="top" id="hf1-ad-j3k"/>
+                                    <constraint firstAttribute="trailing" secondItem="k4X-qD-OBK" secondAttribute="trailing" id="uYJ-th-sZD"/>
+                                    <constraint firstItem="k4X-qD-OBK" firstAttribute="leading" secondItem="Gfv-XC-DVt" secondAttribute="trailing" id="yJx-f8-Mvm"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="segLeftButton" destination="vCo-3b-w6x" id="9sj-EU-4iG"/>
+                                    <outlet property="segMidButton" destination="pOt-Vd-ETy" id="r9N-Zf-9Cj"/>
+                                    <outlet property="segRightButton" destination="k4X-qD-OBK" id="dUF-Ou-1Lf"/>
+                                    <outletCollection property="segments" destination="vCo-3b-w6x" collectionClass="NSMutableArray" id="ua5-IZ-Z2U"/>
+                                    <outletCollection property="segments" destination="pOt-Vd-ETy" collectionClass="NSMutableArray" id="LNj-OQ-yqV"/>
+                                    <outletCollection property="segments" destination="k4X-qD-OBK" collectionClass="NSMutableArray" id="mtG-Sd-eXA"/>
+                                    <outletCollection property="separators" destination="j2a-jP-QU6" collectionClass="NSMutableArray" id="4W9-H5-yfE"/>
+                                    <outletCollection property="separators" destination="Gfv-XC-DVt" collectionClass="NSMutableArray" id="M56-Ih-F52"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YNy-8r-8Zb" userLabel="Title view">
+                                <rect key="frame" x="0.0" y="20" width="600" height="245"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTp-E6-1aB">
+                                        <rect key="frame" x="279" y="149" width="42" height="20"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XvD-E9-fZq" userLabel="Mute Button" customClass="VRMaskColoredButton" customModule="VRMaskColoredButton">
+                                        <rect key="frame" x="526" y="19" width="44" height="44"/>
+                                        <state key="normal" image="sound yes" backgroundImage="bg small circle"/>
+                                        <state key="selected" image="sound no" backgroundImage="bg small circle pressed"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                                <color key="value" white="0.97141973920863312" alpha="0.25461906934306572" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="normalColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="0.84342210310218979" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="controlButtonPressed:" destination="FaL-76-6ee" eventType="touchUpInside" id="vxz-Ri-4bd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ZTp-E6-1aB" firstAttribute="centerY" secondItem="YNy-8r-8Zb" secondAttribute="centerY" multiplier="1.3" id="1fB-Yx-9Nh"/>
+                                    <constraint firstItem="XvD-E9-fZq" firstAttribute="centerY" secondItem="YNy-8r-8Zb" secondAttribute="centerY" multiplier="1/3" priority="750" id="1xi-P9-ZJf"/>
+                                    <constraint firstItem="XvD-E9-fZq" firstAttribute="top" relation="greaterThanOrEqual" secondItem="YNy-8r-8Zb" secondAttribute="top" constant="10" id="ACk-wt-niq"/>
+                                    <constraint firstItem="ZTp-E6-1aB" firstAttribute="top" relation="greaterThanOrEqual" secondItem="XvD-E9-fZq" secondAttribute="bottom" priority="750" constant="10" id="LBf-7D-xnG"/>
+                                    <constraint firstAttribute="trailing" secondItem="XvD-E9-fZq" secondAttribute="trailing" constant="30" id="QxE-Fx-ZOc"/>
+                                    <constraint firstItem="ZTp-E6-1aB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="YNy-8r-8Zb" secondAttribute="leading" constant="30" id="hOg-JY-kab"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZTp-E6-1aB" secondAttribute="trailing" constant="30" id="rPf-xX-p2A"/>
+                                    <constraint firstItem="ZTp-E6-1aB" firstAttribute="centerX" secondItem="YNy-8r-8Zb" secondAttribute="centerX" id="vc1-me-6gc"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iq0-a6-BgS" customClass="VRMaskColoredButton" customModule="VRMaskColoredButton">
+                                <rect key="frame" x="526" y="278" width="44" height="44"/>
+                                <state key="normal" image="forward" backgroundImage="bg small circle"/>
+                                <connections>
+                                    <action selector="controlButtonPressed:" destination="FaL-76-6ee" eventType="touchUpInside" id="BhP-Ex-w5p"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.19607843137254902" green="0.0" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Iq0-a6-BgS" secondAttribute="trailing" priority="248" constant="30" id="2F9-Cr-rmb"/>
+                            <constraint firstItem="nx2-Uj-O6i" firstAttribute="centerX" secondItem="1on-hb-PHh" secondAttribute="centerX" id="2Xm-er-WIf"/>
+                            <constraint firstItem="vgp-PX-JoD" firstAttribute="top" secondItem="YNy-8r-8Zb" secondAttribute="bottom" id="3ZV-PJ-x1u"/>
+                            <constraint firstItem="nx2-Uj-O6i" firstAttribute="top" secondItem="RI1-Wt-6jm" secondAttribute="bottom" constant="15" id="4l3-qu-3ID"/>
+                            <constraint firstItem="Iq0-a6-BgS" firstAttribute="centerY" secondItem="vgp-PX-JoD" secondAttribute="centerY" id="4v3-sO-2IA"/>
+                            <constraint firstItem="RI1-Wt-6jm" firstAttribute="leading" secondItem="nx2-Uj-O6i" secondAttribute="leading" constant="3" id="93S-gk-e5Z"/>
+                            <constraint firstItem="vgp-PX-JoD" firstAttribute="centerX" secondItem="1on-hb-PHh" secondAttribute="centerX" id="CPs-Kh-kwt"/>
+                            <constraint firstItem="t7o-DY-hcl" firstAttribute="leading" secondItem="1on-hb-PHh" secondAttribute="leading" priority="248" constant="30" id="EKN-uq-Sv8"/>
+                            <constraint firstItem="vgp-PX-JoD" firstAttribute="centerY" secondItem="1on-hb-PHh" secondAttribute="centerY" id="UJO-ip-D5K"/>
+                            <constraint firstItem="vgp-PX-JoD" firstAttribute="leading" relation="lessThanOrEqual" secondItem="t7o-DY-hcl" secondAttribute="trailing" constant="130" id="Yp5-Zg-T4q"/>
+                            <constraint firstItem="t7o-DY-hcl" firstAttribute="centerY" secondItem="vgp-PX-JoD" secondAttribute="centerY" id="bY7-bU-KWz"/>
+                            <constraint firstItem="Cpe-In-LRf" firstAttribute="top" secondItem="nx2-Uj-O6i" secondAttribute="bottom" constant="20" id="dDz-Sg-NLj"/>
+                            <constraint firstItem="Iq0-a6-BgS" firstAttribute="leading" relation="lessThanOrEqual" secondItem="vgp-PX-JoD" secondAttribute="trailing" constant="130" id="dNh-H3-Pdg"/>
+                            <constraint firstItem="YNy-8r-8Zb" firstAttribute="leading" secondItem="1on-hb-PHh" secondAttribute="leading" id="gW1-qc-KTL"/>
+                            <constraint firstItem="YNy-8r-8Zb" firstAttribute="top" secondItem="YD7-f4-bz3" secondAttribute="bottom" id="pGY-Rf-XII"/>
+                            <constraint firstAttribute="trailing" secondItem="YNy-8r-8Zb" secondAttribute="trailing" id="z0v-hv-7ay"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Yp5-Zg-T4q"/>
+                                <exclude reference="dNh-H3-Pdg"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="Yp5-Zg-T4q"/>
+                                <include reference="dNh-H3-Pdg"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="uc8-fy-BEg"/>
+                    <navigationItem key="navigationItem" title="The controller" id="C8z-ZY-W4B"/>
+                    <connections>
+                        <outlet property="backwardButton" destination="t7o-DY-hcl" id="eh0-vp-6C6"/>
+                        <outlet property="forwardButton" destination="Iq0-a6-BgS" id="0Pi-hD-0qO"/>
+                        <outlet property="muteButton" destination="XvD-E9-fZq" id="C86-dv-Yu8"/>
+                        <outlet property="playButton" destination="vgp-PX-JoD" id="ygs-ZH-3Ix"/>
+                        <outlet property="segmentedView" destination="nx2-Uj-O6i" id="r23-iH-esH"/>
+                        <outlet property="songTitle" destination="ZTp-E6-1aB" id="OIB-RQ-2Wa"/>
+                        <outletCollection property="playbackControls" destination="t7o-DY-hcl" collectionClass="NSMutableArray" id="0xT-f8-REV"/>
+                        <outletCollection property="playbackControls" destination="vgp-PX-JoD" collectionClass="NSMutableArray" id="l6i-Tc-AYs"/>
+                        <outletCollection property="playbackControls" destination="Iq0-a6-BgS" collectionClass="NSMutableArray" id="xFG-XO-eGX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i7Z-jM-KZk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="347"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backward" width="32" height="17"/>
+        <image name="bg large circle" width="70" height="70"/>
+        <image name="bg small circle" width="44" height="44"/>
+        <image name="bg small circle pressed" width="44" height="44"/>
+        <image name="forward" width="32" height="17"/>
+        <image name="pause" width="20" height="36"/>
+        <image name="play" width="38" height="44"/>
+        <image name="sound no" width="30" height="30"/>
+        <image name="sound yes" width="30" height="30"/>
+    </resources>
+</document>
