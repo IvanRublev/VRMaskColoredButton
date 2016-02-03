@@ -39,16 +39,6 @@
 		ACAA8A7892F38E8B943173B2 /* Pods_VRMaskColoredButton_ExampleObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D900F8DD89159927508A445 /* Pods_VRMaskColoredButton_ExampleObjC.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
-			remoteInfo = VRMaskColoredButton;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		216CF2C24B6869767CD324FF /* Pods-VRMaskColoredButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VRMaskColoredButton_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VRMaskColoredButton_Tests/Pods-VRMaskColoredButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2C815EB507BB6F4538630A34 /* Pods-VRMaskColoredButton_ExampleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VRMaskColoredButton_ExampleSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-VRMaskColoredButton_ExampleSwift/Pods-VRMaskColoredButton_ExampleSwift.release.xcconfig"; sourceTree = "<group>"; };
@@ -311,7 +301,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
 			);
 			name = VRMaskColoredButton_Tests;
 			productName = Tests;
@@ -592,14 +581,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* VRMaskColoredButton_ExampleSwift */;
-			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
