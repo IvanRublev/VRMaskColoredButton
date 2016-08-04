@@ -40,7 +40,7 @@ public extension UIImage {
         let size = CGSizeMake(CGFloat(maxImageWidth), CGFloat(maxImageHeight))
         
         UIGraphicsBeginImageContextWithOptions(size, false, 1.0)
-        for var index=0; index < imagesToDraw.count; index++ {
+        for index in 0 ..< imagesToDraw.count {
             let anImage = imagesToDraw[index]
             let width = CGFloat(imageDimentions[index].0)
             let height = CGFloat(imageDimentions[index].1)

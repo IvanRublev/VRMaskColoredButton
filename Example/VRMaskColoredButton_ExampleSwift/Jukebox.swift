@@ -127,13 +127,13 @@ class Jukebox: NSObject, AVAudioPlayerDelegate {
     
     func nextSong() {
         dispatch_barrier_sync(playQueue) {
-            self._currentSong++
+            self._currentSong += 1
         }
     }
 
     func prevSong() {
         dispatch_barrier_sync(playQueue) {
-            self._currentSong--
+            self._currentSong -= 1
         }
     }
     
@@ -205,7 +205,7 @@ class Jukebox: NSObject, AVAudioPlayerDelegate {
                 self.player = nil
                 
             } else { // play next song
-                self._currentSong++
+                self._currentSong += 1
             }
         }
     }

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "VRMaskColoredButton"
-  s.version          = "1.0.0"
+  s.version          = "1.1.0"
   s.summary          = "iOS button control that assembles its images from masks and colors."
 
   s.description      = <<-DESC
