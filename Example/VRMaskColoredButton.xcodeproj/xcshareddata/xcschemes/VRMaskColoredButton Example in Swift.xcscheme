@@ -7,7 +7,7 @@
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
-            buildForTesting = "YES"
+            buildForTesting = "NO"
             buildForRunning = "YES"
             buildForProfiling = "YES"
             buildForArchiving = "YES"
@@ -17,20 +17,6 @@
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
                BuildableName = "VRMaskColoredButton_ExampleSwift.app"
                BlueprintName = "VRMaskColoredButton_ExampleSwift"
-               ReferencedContainer = "container:VRMaskColoredButton.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "VRMaskColoredButton_Tests.xctest"
-               BlueprintName = "VRMaskColoredButton_Tests"
                ReferencedContainer = "container:VRMaskColoredButton.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
